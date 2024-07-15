@@ -15,6 +15,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     console.log('Email:', email);
     console.log('Message:', message);
 
-    alert('Thank you for your message, ' + name + '. We will get back to you soon.');
+    alert('Thank you for your message, ' + name + '. I will get back to you soon.');
     document.getElementById('contact-form').reset();
 });
