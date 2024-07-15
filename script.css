@@ -208,7 +208,7 @@ span {
 
 .text-animation span {
     position: relative;
-    /* display: inline-block; */
+    padding-right: 10px;
 }
 
 .text-animation span::before {
