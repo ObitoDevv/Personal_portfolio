@@ -6,6 +6,7 @@
     <title>Divyanshu Gautam</title>
     <link rel="stylesheet" href="script.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -49,7 +50,7 @@
             </div>
 
             <div class="btn-group">
-                <a href="https://drive.google.com/file/d/11cOhzYLTMjaasWDEks_CR5N1Rlt7fXeW/view?usp=drive_link" class="btn"> Resume </a>
+                <a href="https://drive.google.com/file/d/1-jPPgb7-5J43NV-zyQdqwomsrfCb_o4I/view?usp=drive_link" class="btn"> Resume </a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
@@ -136,22 +137,10 @@
                 <a href="https://github.com/ObitoDevv/Personal_portfolio" class="github-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-         <div class="project-item">
-                <h3>Stream Line - Real-time Chat Made Simple  <a href="https://stream-line-theta.vercel.app/" class="live-link"><i class="fas fa-link"></i> Live </a></h3>
-                <span>May 2022 - July 2022</span>
-                <ul>
-                    <li>Simplified user onboarding process, leading to a 20% increase in sign-ups.</li>
-                    <li>Facilitated seamless communication, resulting in 10% higher communication efficiency with instant messaging and image sharing.</li>
-                    <li>Developed user-friendly interfaces and interactive features, enhancing user satisfaction and engagement.</li>
-                </ul>
-                <p><strong>Tech Stack:</strong> React.js, Node.js, Firebase</p>
-                <a href="https://github.com/ObitoDevv/StremLine" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-
 
         <div class="project-container">
             <div class="project-item">
-                <h3>Cook Box - Personalized Kitchen Platform <a href="https://drive.google.com/drive/folders/1zJkouicebyLt6DAAAOYvqolo7Z3ItKE5" class="live-link"><i class="fas fa-link"></i> Live </a></h3>
+                <h3>Cook Box - Personalized Kitchen Platform <a href="https://github.com/ObitoDevv/CookBox" class="live-link"><i class="fas fa-link"></i> Live </a></h3>
                 <span>Aug 2023 - Oct 2023</span>
                 <ul>
                     <li>Increased user engagement by 10% through recipe search using ingredient tags.</li>
@@ -162,8 +151,6 @@
                 <a href="https://github.com/ObitoDevv/CookBox" class="github-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-           
-            
             <div class="project-item">
                 <h3>Economic Dispatch Solution - Optimizing Fuel Costs </h3>
                 <span>Aug 2023 - Dec 2023</span>
@@ -176,7 +163,17 @@
                 <a href="https://github.com/ObitoDevv/Fuel_Cost_Optimization_Algorithm" class="github-link"><i class="fab fa-github"></i> GitHub</a>
             </div>
 
-            
+            <div class="project-item">
+                <h3>Stream Line - Real-time Chat Made Simple </h3>
+                <span>May 2022 - July 2022</span>
+                <ul>
+                    <li>Simplified user onboarding process, leading to a 20% increase in sign-ups.</li>
+                    <li>Facilitated seamless communication, resulting in 10% higher communication efficiency with instant messaging and image sharing.</li>
+                    <li>Developed user-friendly interfaces and interactive features, enhancing user satisfaction and engagement.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> React.js, Node.js, Firebase</p>
+                <a href="https://github.com/ObitoDevv/StremLine" class="github-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -251,7 +248,7 @@
         <div class="contact-container">
             <div class="contact-info">
                 <h3>Get in Touch</h3>
-                <p>I'd Love To Hear From You. Wanna help or giving feedback? Feel free to reach out to me.</p>
+                <p>If you have any questions, feel free to reach out to us. We're here to help!</p>
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <p>Lakhimpur Kheri, UTTAR PRADESH (UP), India (IN), Pin Code - 262701</p>
@@ -265,12 +262,15 @@
                     <p>divyanshug7897@gmail.com</p>
                 </div>
             </div>
-            <form id="contact-form" class="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <div class="contact-form">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="61bc6b00-5d75-4268-9c19-653dabc47dee">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer class="footer">

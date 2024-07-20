@@ -1,26 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contact-form');
 
-document.getElementById('menu-icon').addEventListener('click', function() {
-    document.querySelector('.navbar').classList.toggle('active');
-});
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+        // Validate the form
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
 
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+        if (!name || !email || !message) {
+            alert('Please fill out all fields.');
+            return;
+        }
 
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields.');
-        return;
+        if (!validateEmail(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Form data is valid, submit the form
+        contactForm.submit();
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
     }
-
-    // Simulate sending the message
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
-
-    alert('Thank you for your message, ' + name + '. We will get back to you soon.');
-    document.getElementById('contact-form').reset();
 });
-
