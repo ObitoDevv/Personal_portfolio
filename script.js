@@ -1,3 +1,6 @@
+document.getElementById('menu-icon').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('active');
+});
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
 
