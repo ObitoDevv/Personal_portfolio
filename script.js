@@ -21,9 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please enter a valid email address.');
             return;
         }
-
+        
         // Form data is valid, submit the form
         contactForm.submit();
+
+        contactForm.reset();
     });
 
     function validateEmail(email) {
