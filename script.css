@@ -89,7 +89,14 @@ section {
     justify-content: center;
     gap: 15rem;
 }
-
+.intro-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f3f3f3; /* You can adjust this color to match your theme */
+    margin: 20px 0;
+    text-align: justify;
+}
 .home-context {
     display: flex;
     flex-direction: column;
@@ -432,7 +439,9 @@ span {
     }
 
     .home-img img {
-        width: 70vw;
+        width: 80vw;
+        margin: -80px -150px;
+        margin-bottom: -100px;
     }
 
     .timeline-date {
@@ -568,6 +577,9 @@ body {
 
 .experience {
     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heading {
@@ -591,8 +603,10 @@ body {
 
 .experience-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .experience-item {
@@ -600,12 +614,11 @@ body {
     border: 2px solid var(--main-color);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 15px;
+    margin: 20px 0; /* Add margin to space out items */
     padding: 20px;
     width: 100%;
     max-width: 600px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    position: relative;
     display: flex;
     align-items: flex-start;
 }
@@ -659,6 +672,7 @@ body {
     left: 0;
     color: var(--main-color);
 }
+
 
 :root {
     --bg-colour: #080808;
@@ -922,6 +936,7 @@ body {
 
     .skills-category, .experience-item, .project-item, .contact-form {
         width: calc(100% - 30px); /* Full width with margin adjustment */
+       
     }
 
     .icon {
